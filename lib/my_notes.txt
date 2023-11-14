@@ -1,0 +1,107 @@
+    Libraries Used.
+    ---------------
+
+1.  quickalert: ^1.0.2
+    Beautifully designed Qlert Bars (shows in the bottom) interactable.
+
+2.  flutter_animate: ^4.2.0+1
+    Shiny animated texts.
+
+3.  flutter_animated_icons: ^1.0.1
+    Lottie animation sticker programmable.
+
+4.  chatview: ^1.3.1
+    Ready to use ChatView.
+
+5.  awesome_snackbar_content: ^0.1.3
+    Designed snackbar to show information.
+
+6.  slide_to_act: ^2.0.2
+    just like name suggest. A action occurs when slided.
+
+7.  confetti: ^0.7.0
+    whenever you are in party mood.
+
+8.  flex_color_scheme: ^7.3.1
+    your color scheme designer.
+
+9.  lottie: ^2.7.0
+    legendary sticker provider of flutter.
+
+10. hidden_drawer_menu: ^3.0.1
+    Pre-designed menu, i liked.
+
+11. toggle_switch: ^2.1.0
+    I was searching this in my last project, now i have found this son of ###. Toggle between two things.
+
+12. smooth_page_indicator: ^1.1.0
+    multiple dots that are used to keep track of pages. Planning to use in On-Boarding.
+
+13. connectivity_plus: ^5.0.1
+    To check if app is connected to internet or now.
+
+14. url_launcher: ^6.2.1
+    Just to launch links. Might be used to join WhatsApp grp.
+
+15. go_router: ^12.1.1
+    Just a router (animate one page to another). Already puts animation.
+
+16. google_fonts: ^6.1.0
+    We all know google fonts. Right?
+
+17. animated_text_kit: ^4.2.2
+    Some unique text animation. I am planning to use this one on HomePage to Display name of all the clubs.
+
+18. animations: ^2.0.8
+    Some more Animations --> i need specifically the "OpenContainer()" to animate from a tile to page. Because I dont like Hero Widget.
+
+
+
+// Yes ChatGPT wrote this 
+Sure, let's analyze the code and create a basic map of the app structure.
+
+HomePage:
+Stateful Widget: HomePage
+Uses the Stack widget for overlaying components.
+Contains a Scaffold with a ListView.
+Utilizes the AnimatedTextKit for animated text effects.
+Uses the OpenablePost widget for displaying posts.
+ProfilePage:
+Stateful Widget: ProfilePage
+Uses a Stack for overlaying components.
+Contains a Scaffold with a Padding widget.
+Uses the AnimatedNeumorphisimContainer for a neumorphic design.
+Uses the Glass widget for a glassmorphic effect.
+PostOfEvent:
+Stateful Widget: PostOfEvent
+Uses Column and Stack for layout.
+Utilizes NeumorphisimContainer and Glass for the post's design.
+Uses Lottie for animated icons.
+Manages the state of like, save, and registration.
+AnimatedNeumorphisimContainer:
+Stateless Widget: AnimatedNeumorphisimContainer
+Uses AnimatedContainer for animated neumorphic design.
+Supports circular design based on the circle parameter.
+Glass:
+Stateless Widget: Glass
+Uses the GlassmorphicContainer for a glassmorphic effect.
+OpenablePost:
+Stateless Widget: OpenablePost
+Utilizes the OpenContainer from the animations package.
+Displays a PostOfEvent when closed and opens ProfilePage when tapped.
+PartyProvider:
+A provider class managing party-related state and actions.
+Other Libraries Used:
+flutter_animated_icons for animated icons.
+confetti for confetti effects.
+provider for state management.
+lottie for displaying Lottie animations.
+App Structure:
+The app has two main pages, HomePage and ProfilePage.
+Posts are displayed using the PostOfEvent widget.
+Tapping on a post opens the ProfilePage with an open container transition.
+Party-related actions are managed by the PartyProvider.
+Note:
+The map is a simplified representation, and the actual structure may involve more details depending on the complete codebase.
+It's advisable to structure the app with clear separation of concerns, considering features, UI, and state management. This will improve maintainability and scalability.
+Feel free to provide more specific details or ask questions about particular parts of the code or app structure.
