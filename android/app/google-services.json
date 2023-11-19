@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588416224943",
+    "project_id": "campus-events-427b0",
+    "storage_bucket": "campus-events-427b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588416224943:android:b4dda16ad41bcfbc4a0e5a",
+        "android_client_info": {
+          "package_name": "com.example.campus_events"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588416224943-sij0t56oolod69n477behdplmdub8ukh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-0xPcankgttczCg6g58megIXEcbZEFDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588416224943-sij0t56oolod69n477behdplmdub8ukh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,7 @@
+import 'package:campus_events/Provider/my_provider.dart';
+import 'package:campus_events/Services/FireAuth%20Service/authentication.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class GoogleSignInButton extends StatefulWidget {
   const GoogleSignInButton({super.key});
@@ -8,20 +11,19 @@ class GoogleSignInButton extends StatefulWidget {
 }
 
 class _GoogleSignInButtonState extends State<GoogleSignInButton> {
-  final bool _isSigningIn = false;
+  bool _isSigningIn = false;
 
   _check_login() {
-    // if (Authenticate.isLoggedIn()) {
-    //   Navigator.of(context)
-    //       .push(MaterialPageRoute(builder: (context) => const MainPage()));
-    // } else {
-    //   ScaffoldMessenger.of(context).showSnackBar(
-    //     const SnackBar(
-    //       content: Text('Failed!'),
-    //       duration: Duration(seconds: 3), // Adjust the duration as needed
-    //     ),
-    //   );
-    // }
+    if (Authenticate.isLoggedIn()) {
+      context.read<MyProvider>().loginSuccessful();
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Failed!'),
+          duration: Duration(seconds: 3), // Adjust the duration as needed
+        ),
+      );
+    }
   }
 
   @override
@@ -42,25 +44,25 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                 ),
               ),
               onPressed: () async {
-                //   setState(() {
-                //     _isSigningIn = true;
-                //   });
+                setState(() {
+                  _isSigningIn = true;
+                });
 
-                //   if (await Authenticate.continueWithGoogle()) {
-                //     _check_login();
-                //   } else {
-                //     ScaffoldMessenger.of(context).showSnackBar(
-                //       const SnackBar(
-                //         content: Text('Failed!'),
-                //         duration:
-                //             Duration(seconds: 3), // Adjust the duration as needed
-                //       ),
-                //     );
-                //   }
+                if (await Authenticate.continueWithGoogle()) {
+                  _check_login();
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Failed!'),
+                      duration:
+                          Duration(seconds: 3), // Adjust the duration as needed
+                    ),
+                  );
+                }
 
-                //   setState(() {
-                //     _isSigningIn = false;
-                //   });
+                setState(() {
+                  _isSigningIn = false;
+                });
               },
               child: const Padding(
                 padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
