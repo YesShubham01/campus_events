@@ -1,6 +1,6 @@
-# campus_events
+# CampusEvents
 
-A new Flutter project.
+A Event broadcast application with Flutter and Firebase which let user register in one click.
 
 ## Getting Started
 
