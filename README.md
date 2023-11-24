@@ -1,8 +1,16 @@
 # CampusEvents
-
 A Event broadcast application with Flutter and Firebase which let user register in one click.
 
-## Getting Started
+## Screen-Recording & Screenshots
+
+Link to Screen-Recording : 
+
+https://drive.google.com/drive/folders/16qq5ICyKWMqI_w9cSOavejmWb-ODo8D2?usp=drive_link
+
+![HomePage](https://github.com/YesShubham01/campus_events/assets/116451766/604e67d8-9b03-4ba2-8814-9b3a2c12eb5b)
+
+
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
